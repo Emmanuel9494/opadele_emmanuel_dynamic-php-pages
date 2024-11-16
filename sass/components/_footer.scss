@@ -1,0 +1,36 @@
+@use "../abstracts" as a;
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#main-footer{
+    background-color: a.$black;
+    color: a.$white;
+    margin-top: 25px;
+    justify-items: center;
+    padding-bottom: 25px;
+    a{
+        justify-items: center;
+    }
+    img{
+        width: 120px;
+        height: 120px;
+        padding-top: 15px;
+    }
+    h3{
+        font-family: a.$main-font;
+        text-transform: uppercase;
+        font-size: 20px;
+        padding-block: 10px;
+    }
+    p{
+        font-family: a.$sub-font;
+        font-size: 15px;
+        padding-block: 10px;
+        word-spacing: 2px;
+
+    }
+    
+}
