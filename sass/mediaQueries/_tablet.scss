@@ -2,5 +2,18 @@
 @use "../components";
 
 @media screen and (min-width: 768px) {
-
+    .team-post{
+        margin-bottom: 20px;
+        img{
+            width: 180px; 
+            height: auto; 
+        }
+        .mini-post{
+            align-content: center;
+            margin-left: 10%;   
+        }
+        .f-name, .l-name, .title{
+            width: 150px;
+        }
+}
 }

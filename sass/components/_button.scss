@@ -1,0 +1,26 @@
+@use "../abstracts" as a;
+
+button {
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: a.$main-font;
+    font-weight: 500;
+    color: a.$black; 
+    background-color: a.$yellow; 
+    border: none;
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    // transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: a.$black; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    color: a.$yellow; 
+    border: .1px solid a.$yellow;
+}
+

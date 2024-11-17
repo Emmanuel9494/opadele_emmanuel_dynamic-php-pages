@@ -19,31 +19,31 @@
         <h2 class="hidden">Yellow People's Homepage</h2>
         <a href="index.php" class="col-start-1 col-span-1"><img src="images/yellow-pple.png" alt="main logo" ></a>
         <h3 class="col-start-2 cols-span-2"><a href="index.php">Yellow People's</a></h3>
-        <img src="images/menu-icon.png" alt="main menu" class="col-start-4 col-span-1 head-img">
+        <img src="images/menu-icon.png" alt="main menu" class="col-start-4 col-span-1 m-col-start-11 m-col-span-1  head-img">
     </section>
     <section id="hero-section" class="grid-con">
         <h2 class="col-span-full">At You Lowest? Speak</h2>
         <p class="col-span-full">We HearLow!!!</p>
         <h3 class="col-span-full">Yellow People's</h3>
     </section>
-    <section id="yellow-teams" class="grid-con">
+    <section id="yellow-teams" class="grid-coxn">
         <h2 class="col-span-full">Select and Know Us.</h2>
-        <div class="team-post col-span-full">
-            <img src="images/person1.jpg" alt="Person one">
-            <p>First Name:<span>Mary</span></p>
-            <p>Last Name:<span>Smith</span></p>
-            <p>Title:<span>ceo</span></p>
-            <p>Description:<span>The CEO is the highest-ranking executive responsible for the overall success of the organization. They set strategic goals, make major corporate decisions, and ensure the company's vision is realized. They work closely with stakeholders, the board of directors, and other executives to drive growth and profitability.</span></p>
-            <button onclick="location.href='details.php'">Back To Home</button>
+        <div class="team-post grid-con">
+            <img src="images/person1th.jpg" alt="Person one" class="team-post col-start-1 col-span-2">
+            <div class="mini-post col-start-3 col-span-2 m-col-start-3  m-col-span-5">
+            <p class="title">Title:<span>ceo</span></p>
+            <p class="f-name">First Name:<span>Mary</span></p>
+            <p class="l-name">Last Name:<span>Smith</span></p>
+            <button onclick="location.href='index.php'">Back To Home</button>
+            </div>
+            <p class="description col-span-full">Description:<span>The CEO is the highest-ranking executive responsible for the overall success of the organization. They set strategic goals, make major corporate decisions, and ensure the company's vision is realized. They work closely with stakeholders, the board of directors, and other executives to drive growth and profitability.</span></p>
         </div>
-        <div class="team-post col-span-full">
-            <img src="images/person1th.jpg" alt="Person one">
-            <p>First Name:<span>Mary</span></p>
-            <p>Last Name:<span>Smith</span></p>
-            <p>Title:<span>ceo</span></p>
-            <p>Description:<span>The CEO is the highest-ranking executive responsible for the overall success of the organization. They set strategic goals, make major corporate decisions, and ensure the company's vision is realized. They work closely with stakeholders, the board of directors, and other executives to drive growth and profitability.</span></p>
-            <button onclick="location.href='details.php'">Back To Home</button>
-        </div>
+    </section>
+   
+    <section id="fall-section" class="grid-con">
+        <h2 class="col-span-full">Turning whispers of despair into echoes of hope</h2>
+        <p class="col-span-full">We Are here to listen!!!</p>
+        <h3 class="col-span-full">Yellow People's</h3>
     </section>
    
           
