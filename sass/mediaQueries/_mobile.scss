@@ -30,8 +30,11 @@
     .head-img{
         width: 30px;
         height: 30px;
-       margin-left: 45%;
-
+        margin-left: 45%;
+        cursor: pointer;
+    }
+    .head-img:hover{
+        transform: rotate(180deg);
     }
 }
 
@@ -46,6 +49,96 @@
         font-size: 45px;
         font-family: a.$main-font;
         text-transform: uppercase;
+    }
+    p{
+        font-size: 15px;
+        font-family: a.$main-font;
+        text-transform: uppercase;
+        color: a.$yellow;
+        font-weight: 400;
+        word-spacing: 5px;
+        padding-block: 10px;
+
+    }
+    h3{
+        font-size: 20px;
+        font-family: a.$main-font;
+        text-transform: uppercase;
+        word-spacing: 7px;
+        padding-bottom: 10px;
+
+    }
+}
+// Yellow Teams
+#yellow-teams{
+    margin-block:20px ;
+    justify-items: center;
+    h2{
+        font-size: 45px;
+        font-family: a.$main-font;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+   
+    .team-post{
+        margin-bottom: 20px;
+        img{
+            width: 150px; 
+            height: auto; 
+            object-fit: cover;
+            margin-left: 10%;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.397);
+        }
+        .mini-post{
+            align-content: center;
+            margin-left: 10%;
+            
+        }
+        .f-name, .l-name, .title{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 12px;
+            padding-right: 10px;
+            text-transform: uppercase;
+        }
+        span{
+            font-family: a.$main-font;
+            font-weight: 10;
+            padding-left: 10px;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .description{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+            padding-right: 10px;
+            text-transform: uppercase;
+            span{
+                font-family: a.$main-font;
+                font-weight: 10;
+                padding-left: 10px;
+                text-transform:none;
+                font-size: 15px;
+            }
+        }
+    }
+}
+// Fall Section
+#fall-section{
+    background-color: a.$black;
+    color: a.$white;
+    padding-top: 1%;
+    border-radius: 0px 0px 30px 30px;
+    justify-items: center;
+    h2{
+        font-size: 45px;
+        font-family: a.$main-font;
+        text-transform: uppercase;
+        text-align:center ;
     }
     p{
         font-size: 15px;

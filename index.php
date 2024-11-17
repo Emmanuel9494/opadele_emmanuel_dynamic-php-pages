@@ -26,22 +26,22 @@
         <p class="col-span-full">We HearLow!!!</p>
         <h3 class="col-span-full">Yellow People's</h3>
     </section>
-    <section id="yellow-teams" class="grid-con">
+    <section id="yellow-teams" class="">
+        <div class=" grid-con">
         <h2 class="col-span-full">Select and Know Us.</h2>
-        <div class="team-post col-span-full">
-            <img src="images/person1th.jpg" alt="Person one">
-            <p>First Name:<span>Mary</span></p>
-            <p>Last Name:<span>Smith</span></p>
-            <p>Title:<span>ceo</span></p>
-            <button onclick="location.href='details.php'">Learn More</button>
         </div>
-        <div class="team-post col-span-full">
-            <img src="images/person1th.jpg" alt="Person one">
-            <p>First Name:<span>Mary</span></p>
-            <p>Last Name:<span>Smith</span></p>
-            <p>Title:<span>ceo</span></p>
+        
+        <div class="team-post grid-con">
+            <img src="images/person1th.jpg" alt="Person one" class="team-post col-start-1 col-span-2">
+            <div class="mini-post col-start-3 col-span-2 m-col-span-5">
+            <p class="title">Title:<span>ceo</span></p>
+            <p class="f-name">First Name:<span>Mary</span></p>
+            <p class="l-name">Last Name:<span>Smith</span></p>
             <button onclick="location.href='details.php'">Learn More</button>
+            </div>
         </div>
+       
+       
     </section>
    
           
@@ -84,9 +84,6 @@
          </footer>
    
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
-    <script src="js/main.js"></script>
+   
 </body>
 </html>
