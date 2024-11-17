@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+//connect to the running database server and the specific database
+require_once('includes/connect.php');
+
+//create a query to run in SQL
+$query = 'SELECT employees.id AS emp, title, fname, lname, thumb FROM employees, jobs WHERE employees.job_id = jobs.id';
+
+//run the query to get back the content
+$results = mysqli_query($connect,$query);
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="images/trivox-Logo.svg"  rel="icon" type="image/svg+xml">
+    <link href="images/yellow-pple.png"  rel="icon" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -19,7 +29,7 @@
         <h2 class="hidden">Yellow People's Homepage</h2>
         <a href="index.php" class="col-start-1 col-span-1"><img src="images/yellow-pple.png" alt="main logo" ></a>
         <h3 class="col-start-2 cols-span-2"><a href="index.php">Yellow People's</a></h3>
-        <img src="images/menu-icon.png" alt="main menu" class="col-start-4 col-span-1 head-img">
+        <img src="images/menu-icon.png" alt="main menu" class="col-start-4 col-span-1 m-col-start-11 head-img">
     </section>
     <section id="hero-section" class="grid-con">
         <h2 class="col-span-full">At Your Lowest? Speak</h2>
@@ -30,16 +40,23 @@
         <div class=" grid-con">
         <h2 class="col-span-full">Select and Know Us.</h2>
         </div>
-        
-        <div class="team-post grid-con">
-            <img src="images/person1th.jpg" alt="Person one" class="team-post col-start-1 col-span-2">
-            <div class="mini-post col-start-3 col-span-2 m-col-span-5">
-            <p class="title">Title:<span>ceo</span></p>
-            <p class="f-name">First Name:<span>Mary</span></p>
-            <p class="l-name">Last Name:<span>Smith</span></p>
-            <button onclick="location.href='details.php'">Learn More</button>
-            </div>
-        </div>
+        <?php
+        while ($row = mysqli_fetch_array($results)) {
+            echo '
+            <div class="team-post grid-con">
+                <img src="images/'.$row['thumb'].'" alt="Person one" class="team-post col-start-1 col-span-2">
+                <div class="mini-post col-start-3 col-span-2 m-col-span-5">
+                    <p class="title">Title:<span>'.$row['title'].'</span></p>
+                    <p class="f-name">First Name:<span>'.$row['fname'].'</span></p>
+                    <p class="l-name">Last Name:<span>'.$row['lname'].'</span></p>
+                    <a href="details.php?id='.$row['emp'].'">
+                    <button>Learn More</button>
+                    </a>
+                </div>
+            </div>';
+        }
+        ?>
+
        
        
     </section>
@@ -82,6 +99,14 @@
          <h3 class="col-span-full"><a href="index.php">Yellow People's</a></h3>
          <p class="col-span-full">Ask For A Free Yellow People's Tote Bag!!!</p>
          </footer>
+         <div class="php-font">
+         <?php
+            echo date('l jS \of F Y h:i:s A'); 
+            echo'<br>';
+            print_r($results);
+            ?>
+         </div>
+        
    
     
    
